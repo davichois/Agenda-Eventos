@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #bbd8ff;
+}
+
+.container-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-form {
+  width: 30%;
+}
+
+.container-form h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.form-children {
+  margin: 10px 0;
+}
+
+.form-children input {
+  width: 90%;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  border: black solid 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-children textarea {
+  width: 90%;
+  height: 100px;
+  max-width: 90%;
+  min-width: 90%;
+  min-height: 100px;
+  border-radius: 5px;
+  padding: 5px;
+  border: black solid 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-children-rb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.rb-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rb-element input {
+  margin: 5px;
+}
+
+.rb-element span {
+  margin: 5px;
+  font-weight: 600;
+}
+
+.form-acciones {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #0063e5;
+  padding: 5px;
+  border: #0063e5 solid 2px;
+  border-radius: 8px;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.377);
+}
+
+.btn:hover {
+  background-color: #1a7dff;
+  border: #1a7dff solid 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+}
+
+/* tareas */
+.container-list {
+  width: 50%;
+  height: 70%;
+}
+
+.container-list h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: black;
+  text-shadow: rgba(0, 0, 0, 0.219) 0px 4px 5px;
+}
+
+.contenedor-actividades {
+  width: 90%;
+  border: 2px solid #ffffffbb;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-top: 40px;
+  height: 430px;
+  min-height: 400px;
+  padding: 20px;
+  overflow: scroll;
+  min-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.164) 0 3px 20px;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  /* border: 2px solid #dfdfdf9c; */
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.248);
+  margin-bottom: 15px;
+  min-width: 334px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.item-container p {
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+}
+
+.info span {
+  font-weight: bold;
+  color: rgba(9, 9, 9, 0.693);
+}
+
+.acciones-item input {
+  margin-right: 10px;
+}
+
+.detalle span {
+  font-weight: bold;
+  color: #004aab;
+}
+
+@media (max-width: 800px) {
+  .container-page {
+    width: 100%;
+    min-width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-list {
+    width: 50%;
+    height: 70%;
+    margin-top: 50px;
+  }
+  .contenedor-actividades {
+    width: 90%;
+    border: 2px solid #ffffffbb;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    margin-top: 40px;
+    height: 300px;
+    padding: 20px;
+    overflow: scroll;
+    min-width: 400px;
+    margin-bottom: 30px;
+  }
+}

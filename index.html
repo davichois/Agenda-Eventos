@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento LP1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-page">
+
+        <div class="container-form">
+            <h1>Creacion de Eventos</h1>
+            <div class="form">
+                <div class="form-children">
+                    <input type="text" placeholder="Nombre evento" id="nombre_evento">
+                </div>
+
+                <div class="form-children">
+                    <input type="date" id="fecha_evento">
+                </div>
+
+                <!-- radion button -->
+                <div class="form-children-rb">
+                    <div class="rb-element">
+                        <input type="radio" name="evento" id="academico"
+                            value="academico" /><span>academico</span><br />
+                    </div>
+
+                    <div class="rb-element">
+                        <input type="radio" name="evento" id="social" value="social" /><span>social</span><br />
+                    </div>
+
+                    <div class="rb-element">
+                        <input type="radio" name="evento" id="privado" value="privado" /><span>privado</span><br />
+                    </div>
+                </div>
+
+                <div class="form-children">
+                    <textarea cols="30" rows="5" placeholder="Descripcion del Evento"
+                        id="descripcion_evento"></textarea>
+                </div>
+
+                <div class="form-acciones">
+                    <input type="button" value="LIMPIAR" id="limpiar" class="btn">
+                    <input type="button" value="AGENDAR" id="agendar" class="btn">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-list">
+            <h3>LISTA DE EVENTOS</h3>
+            <p class="detalle">Tienes: <span id="num_notas">0</span> eventos</p>
+            <p class="detalle">El evento mas cercano es: <span id="nombre_evento_cercano">null</span> en la fecha de
+                <span id="fecha_evento_cercano">null</span>
+            </p>
+            <div class="contenedor-actividades" id="listado_evento">
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
